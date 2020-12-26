@@ -260,7 +260,7 @@ else
    
 $uname=$_SESSION["username"];
    $count=0;
-   if($flag==1)
+//    if($flag==1)
 	 $res=mysqli_query($conn, "INSERT INTO `product` (`id`, `title`, `description`, `vender`, `feature`, `size`, `price`, `prod_image`, `usernamep`) VALUES (NULL, '$_POST[title]', '$_POST[description]', '$_POST[vender]', '$_POST[optradio]', '$_POST[Size]', '$_POST[price]', '$pname', '$uname'); ") or die(mysqli_error($conn));
 	 $count=mysqli_num_rows($res); //<!-- it is used for check user name is exist or not -->
      
