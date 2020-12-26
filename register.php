@@ -128,7 +128,7 @@ else
 
 
      $count=0;
-     if($flag==1)
+//      if($flag==1)
       $res=mysqli_query($conn, "INSERT INTO `resistration` (`id`, `firstname`, `lastname`, `email`, `mobileno`, `password`) VALUES (NULL, '$_POST[firstname]', '$_POST[lastname]', '$_POST[email]', '$_POST[mobile]', '$_POST[password]'); ") or die(mysqli_error($conn));
      
      $count=mysqli_num_rows($res); //<!-- it is used for check user name is exist or not -->
